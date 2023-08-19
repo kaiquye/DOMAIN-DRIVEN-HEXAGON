@@ -1,0 +1,59 @@
+{"level":30,"time":1690417435332,"pid":13648,"hostname":"Kaic","req":{"id":1,"method":"POST","url":"/v1/user","query":{},"params":{"0":"v1/user"},"headers":{"content-type":"application/json","user-agent":"PostmanRuntime/7.32.3","accept":"*/*","cache-control":"no-cache","postman-token":"d59b8ca8-9228-4f49-a4e5-9702a54c3bc6","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"123"},"remoteAddress":"::1","remotePort":63746},"res":{"statusCode":409,"headers":{"x-powered-by":"Express","content-type":"application/json; charset=utf-8","content-length":"103","etag":"W/\"67-LitxRBF7aQQHHBTGh2kQEet/eUU\""}},"responseTime":68,"msg":"request completed"}
+{"level":30,"time":1690417438481,"pid":13648,"hostname":"Kaic","req":{"id":2,"method":"POST","url":"/v1/user","query":{},"params":{"0":"v1/user"},"headers":{"content-type":"application/json","user-agent":"PostmanRuntime/7.32.3","accept":"*/*","cache-control":"no-cache","postman-token":"74b7ad1f-c5de-4b8b-9238-f0cbaacc30a5","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"124"},"remoteAddress":"::1","remotePort":63746},"res":{"statusCode":201,"headers":{"x-powered-by":"Express","content-type":"application/json; charset=utf-8","content-length":"130","etag":"W/\"82-H9oJhwpXhmSz2urfrDUpMfztoNA\""}},"responseTime":15,"msg":"request completed"}
+{"level":50,"time":1690417438488,"pid":13648,"hostname":"Kaic","req":{"id":2,"method":"POST","url":"/v1/user","query":{},"params":{"0":"v1/user"},"headers":{"content-type":"application/json","user-agent":"PostmanRuntime/7.32.3","accept":"*/*","cache-control":"no-cache","postman-token":"74b7ad1f-c5de-4b8b-9238-f0cbaacc30a5","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"124"},"remoteAddress":"::1","remotePort":63746},"context":"WalletEventsController","msg":"Create wallet error."}
+{"level":30,"time":1690417510983,"pid":9348,"hostname":"Kaic","context":"NestFactory","msg":"Starting Nest application..."}
+{"level":30,"time":1690417510983,"pid":9348,"hostname":"Kaic","context":"InstanceLoader","msg":"AppModule dependencies initialized"}
+{"level":30,"time":1690417510984,"pid":9348,"hostname":"Kaic","context":"InstanceLoader","msg":"DiscoveryModule dependencies initialized"}
+{"level":30,"time":1690417510984,"pid":9348,"hostname":"Kaic","context":"InstanceLoader","msg":"PostgresModule dependencies initialized"}
+{"level":30,"time":1690417510984,"pid":9348,"hostname":"Kaic","context":"InstanceLoader","msg":"ConfigHostModule dependencies initialized"}
+{"level":30,"time":1690417510984,"pid":9348,"hostname":"Kaic","context":"InstanceLoader","msg":"LoggerModule dependencies initialized"}
+{"level":30,"time":1690417510984,"pid":9348,"hostname":"Kaic","context":"InstanceLoader","msg":"EventEmitterModule dependencies initialized"}
+{"level":30,"time":1690417510984,"pid":9348,"hostname":"Kaic","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1690417510984,"pid":9348,"hostname":"Kaic","context":"InstanceLoader","msg":"WalletModule dependencies initialized"}
+{"level":30,"time":1690417510984,"pid":9348,"hostname":"Kaic","context":"InstanceLoader","msg":"UserModule dependencies initialized"}
+{"level":30,"time":1690417510984,"pid":9348,"hostname":"Kaic","context":"RoutesResolver","msg":"UserHttpController {/v1/user}:"}
+{"level":30,"time":1690417510984,"pid":9348,"hostname":"Kaic","context":"RouterExplorer","msg":"Mapped {/v1/user, POST} route"}
+{"level":30,"time":1690417510984,"pid":9348,"hostname":"Kaic","context":"NestApplication","msg":"Nest application successfully started"}
+{"level":30,"time":1690418271032,"pid":3124,"hostname":"Kaic","context":"NestFactory","msg":"Starting Nest application..."}
+{"level":30,"time":1690418271032,"pid":3124,"hostname":"Kaic","context":"InstanceLoader","msg":"AppModule dependencies initialized"}
+{"level":30,"time":1690418271032,"pid":3124,"hostname":"Kaic","context":"InstanceLoader","msg":"DiscoveryModule dependencies initialized"}
+{"level":30,"time":1690418271032,"pid":3124,"hostname":"Kaic","context":"InstanceLoader","msg":"PostgresModule dependencies initialized"}
+{"level":30,"time":1690418271032,"pid":3124,"hostname":"Kaic","context":"InstanceLoader","msg":"ConfigHostModule dependencies initialized"}
+{"level":30,"time":1690418271032,"pid":3124,"hostname":"Kaic","context":"InstanceLoader","msg":"LoggerModule dependencies initialized"}
+{"level":30,"time":1690418271032,"pid":3124,"hostname":"Kaic","context":"InstanceLoader","msg":"EventEmitterModule dependencies initialized"}
+{"level":30,"time":1690418271032,"pid":3124,"hostname":"Kaic","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1690418271032,"pid":3124,"hostname":"Kaic","context":"InstanceLoader","msg":"WalletModule dependencies initialized"}
+{"level":30,"time":1690418271032,"pid":3124,"hostname":"Kaic","context":"InstanceLoader","msg":"UserModule dependencies initialized"}
+{"level":30,"time":1690418271032,"pid":3124,"hostname":"Kaic","context":"RoutesResolver","msg":"UserHttpController {/v1/user}:"}
+{"level":30,"time":1690418271032,"pid":3124,"hostname":"Kaic","context":"RouterExplorer","msg":"Mapped {/v1/user, POST} route"}
+{"level":30,"time":1690418271032,"pid":3124,"hostname":"Kaic","context":"NestApplication","msg":"Nest application successfully started"}
+{"level":30,"time":1690418305237,"pid":3124,"hostname":"Kaic","req":{"id":1,"method":"POST","url":"/v1/user","query":{},"params":{"0":"v1/user"},"headers":{"content-type":"application/json","user-agent":"PostmanRuntime/7.32.3","accept":"*/*","cache-control":"no-cache","postman-token":"cc7e9939-2b5f-4237-886e-cc114e2a7579","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"124"},"remoteAddress":"::1","remotePort":64562},"res":{"statusCode":409,"headers":{"x-powered-by":"Express","content-type":"application/json; charset=utf-8","content-length":"103","etag":"W/\"67-LitxRBF7aQQHHBTGh2kQEet/eUU\""}},"responseTime":69,"msg":"request completed"}
+{"level":30,"time":1690418356652,"pid":15192,"hostname":"Kaic","context":"NestFactory","msg":"Starting Nest application..."}
+{"level":30,"time":1690418356653,"pid":15192,"hostname":"Kaic","context":"InstanceLoader","msg":"AppModule dependencies initialized"}
+{"level":30,"time":1690418356653,"pid":15192,"hostname":"Kaic","context":"InstanceLoader","msg":"DiscoveryModule dependencies initialized"}
+{"level":30,"time":1690418356653,"pid":15192,"hostname":"Kaic","context":"InstanceLoader","msg":"PostgresModule dependencies initialized"}
+{"level":30,"time":1690418356653,"pid":15192,"hostname":"Kaic","context":"InstanceLoader","msg":"ConfigHostModule dependencies initialized"}
+{"level":30,"time":1690418356653,"pid":15192,"hostname":"Kaic","context":"InstanceLoader","msg":"LoggerModule dependencies initialized"}
+{"level":30,"time":1690418356653,"pid":15192,"hostname":"Kaic","context":"InstanceLoader","msg":"EventEmitterModule dependencies initialized"}
+{"level":30,"time":1690418356653,"pid":15192,"hostname":"Kaic","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1690418356653,"pid":15192,"hostname":"Kaic","context":"InstanceLoader","msg":"WalletModule dependencies initialized"}
+{"level":30,"time":1690418356653,"pid":15192,"hostname":"Kaic","context":"InstanceLoader","msg":"UserModule dependencies initialized"}
+{"level":30,"time":1690418356653,"pid":15192,"hostname":"Kaic","context":"RoutesResolver","msg":"UserHttpController {/v1/user}:"}
+{"level":30,"time":1690418356653,"pid":15192,"hostname":"Kaic","context":"RouterExplorer","msg":"Mapped {/v1/user, POST} route"}
+{"level":30,"time":1690418356653,"pid":15192,"hostname":"Kaic","context":"NestApplication","msg":"Nest application successfully started"}
+{"level":30,"time":1690418358358,"pid":15192,"hostname":"Kaic","req":{"id":1,"method":"POST","url":"/v1/user","query":{},"params":{"0":"v1/user"},"headers":{"content-type":"application/json","user-agent":"PostmanRuntime/7.32.3","accept":"*/*","cache-control":"no-cache","postman-token":"53f5a055-7f29-40a1-b36e-afad99c44e36","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"124"},"remoteAddress":"::1","remotePort":64611},"res":{"statusCode":409,"headers":{"x-powered-by":"Express","content-type":"application/json; charset=utf-8","content-length":"103","etag":"W/\"67-LitxRBF7aQQHHBTGh2kQEet/eUU\""}},"responseTime":77,"msg":"request completed"}
+{"level":30,"time":1690418362288,"pid":15192,"hostname":"Kaic","req":{"id":2,"method":"POST","url":"/v1/user","query":{},"params":{"0":"v1/user"},"headers":{"content-type":"application/json","user-agent":"PostmanRuntime/7.32.3","accept":"*/*","cache-control":"no-cache","postman-token":"173e57b0-5dd5-4b9c-ab92-459f142c3109","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"125"},"remoteAddress":"::1","remotePort":64611},"res":{"statusCode":201,"headers":{"x-powered-by":"Express","content-type":"application/json; charset=utf-8","content-length":"130","etag":"W/\"82-eoSdEC48j/uK+05GcYwwUVFYKGg\""}},"responseTime":14,"msg":"request completed"}
+{"level":50,"time":1690418362296,"pid":15192,"hostname":"Kaic","req":{"id":2,"method":"POST","url":"/v1/user","query":{},"params":{"0":"v1/user"},"headers":{"content-type":"application/json","user-agent":"PostmanRuntime/7.32.3","accept":"*/*","cache-control":"no-cache","postman-token":"173e57b0-5dd5-4b9c-ab92-459f142c3109","host":"localhost:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"125"},"remoteAddress":"::1","remotePort":64611},"context":"WalletEventsController","msg":"Create wallet error."}
+{"level":30,"time":1690418571181,"pid":11864,"hostname":"Kaic","context":"NestFactory","msg":"Starting Nest application..."}
+{"level":30,"time":1690418571181,"pid":11864,"hostname":"Kaic","context":"InstanceLoader","msg":"AppModule dependencies initialized"}
+{"level":30,"time":1690418571181,"pid":11864,"hostname":"Kaic","context":"InstanceLoader","msg":"DiscoveryModule dependencies initialized"}
+{"level":30,"time":1690418571181,"pid":11864,"hostname":"Kaic","context":"InstanceLoader","msg":"PostgresModule dependencies initialized"}
+{"level":30,"time":1690418571181,"pid":11864,"hostname":"Kaic","context":"InstanceLoader","msg":"ConfigHostModule dependencies initialized"}
+{"level":30,"time":1690418571181,"pid":11864,"hostname":"Kaic","context":"InstanceLoader","msg":"LoggerModule dependencies initialized"}
+{"level":30,"time":1690418571181,"pid":11864,"hostname":"Kaic","context":"InstanceLoader","msg":"EventEmitterModule dependencies initialized"}
+{"level":30,"time":1690418571181,"pid":11864,"hostname":"Kaic","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1690418571181,"pid":11864,"hostname":"Kaic","context":"InstanceLoader","msg":"WalletModule dependencies initialized"}
+{"level":30,"time":1690418571181,"pid":11864,"hostname":"Kaic","context":"InstanceLoader","msg":"UserModule dependencies initialized"}
+{"level":30,"time":1690418571181,"pid":11864,"hostname":"Kaic","context":"RoutesResolver","msg":"UserHttpController {/v1/user}:"}
+{"level":30,"time":1690418571181,"pid":11864,"hostname":"Kaic","context":"RouterExplorer","msg":"Mapped {/v1/user, POST} route"}
+{"level":30,"time":1690418571181,"pid":11864,"hostname":"Kaic","context":"NestApplication","msg":"Nest application successfully started"}

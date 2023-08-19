@@ -1,0 +1,46 @@
+generator client {
+  provider = "prisma-asda-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum USER_STATUS {
+  ACTIVE
+  CONFIRMATION_PENDING
+  BLOCKED
+}
+
+model User {
+  id         String      @id
+  fistName   String      @db.VarChar(255)
+  lastName   String?     @db.VarChar(255)
+  email      String      @db.VarChar(255)
+  status     USER_STATUS @default(CONFIRMATION_PENDING)
+  password   String      @db.VarChar(255)
+  created_at DateTime    @default(now()) @db.Timestamptz()
+  updated_at DateTime    @default(now()) @updatedAt @db.Timestamptz()
+  Wallet     Wallet[]
+
+  @@unique([email])
+  @@index([email])
+  @@map("tb_Users")
+}
+
+model Wallet {
+  id             String   @id
+  accountNumber  Float    @unique @db.DoublePrecision()
+  accountDigit   Float    @unique @db.DoublePrecision()
+  balance        Float    @db.DoublePrecision()
+  accountHistory Json
+  userId         String   @db.VarChar(255)
+  createAt       DateTime @default(now()) @db.Timestamptz()
+  updatedAt      DateTime @default(now()) @db.Timestamptz()
+
+  User User @relation(fields: [userId], references: [id])
+
+  @@index([accountDigit, accountNumber])
+  @@map("tb_Wallet")
+}
