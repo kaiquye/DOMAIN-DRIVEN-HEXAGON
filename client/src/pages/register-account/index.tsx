@@ -1,3 +1,5 @@
+let titleName = 'Criar conta';
+
 import React from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -8,6 +10,10 @@ import register from '../../ultils/register';
 import { Btn } from '../../components/button';
 
 export function RegisterAccountPage() {
+    React.useEffect(() => {
+        document.title = titleName;
+    }, []);
+
     const navigate = useNavigate();
 
     const [load, setLoad] = React.useState<boolean>(false);

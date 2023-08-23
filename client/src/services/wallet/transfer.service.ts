@@ -23,6 +23,7 @@ class TransferService implements ITransferService {
         const type = "pix";
         const userId = localStorage.getItem(EStorageTypes.USER_ID)
         const success = await apiBase.post(`/user/wallet/${type}/transfer/${userId}`, input)
+        console.log(success)
         if (success) {
             const { payload } = success.data
             SuccessNotification(payload.data.message)
@@ -33,3 +34,5 @@ class TransferService implements ITransferService {
 }
 
 export default new TransferService()
+
+

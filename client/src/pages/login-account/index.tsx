@@ -1,3 +1,4 @@
+let titleName = 'Login';
 import React from 'react';
 import S from './styles';
 import { Link, useNavigate } from 'react-router-dom';
@@ -7,6 +8,10 @@ import { ToastContainer } from 'react-toastify';
 import { Btn } from '../../components/button';
 
 export function LoginPage() {
+    React.useEffect(() => {
+        document.title = titleName;
+    }, []);
+
     const navigate = useNavigate();
     const [email, setEmail] = React.useState<string>('');
     const [password, setPassword] = React.useState<string>(' ');
@@ -20,7 +25,7 @@ export function LoginPage() {
         const logged = await loginUser.perform({ email, password });
         if (logged) {
             setLoad(false);
-            return navigate(`/app/${logged.id}/dashboard`);
+            return navigate(`/${logged.id}/dashboard`);
         }
         setLoad(false);
     };

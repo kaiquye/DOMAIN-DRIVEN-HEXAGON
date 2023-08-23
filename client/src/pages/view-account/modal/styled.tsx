@@ -12,14 +12,23 @@ const ModalOverlay = styled.section`
 
 const Modal = styled.div`
     width: 500px;
-    padding: 20px;
-    background-color: white;
+    min-height: 50%;
+    padding: 10px 50px 50px 50px;
+    background-color: #ffffff;
     box-shadow: #000000af 1px 1px 20px 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
+
+    label {
+        color: #414141;
+    }
+
+    button {
+        padding: 10px 30px 10px 30px;
+    }
 `;
 
 const Input = styled.input`
@@ -44,9 +53,21 @@ const Menu = styled.div`
 `;
 
 const Title = styled.h1`
-    color: black;
+    color: #577db6;
+    margin-bottom: 40px;
+    font-size: 25px;
+`;
+
+const icon = styled.div`
+    width: 100px;
+    height: 100px;
+    background-image: url('https://th.bing.com/th/id/OIP.2h5fM92dCAi7uOkeV_9TiwAAAA?pid=ImgDet&w=400&h=400&rs=1');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
 `;
 export default {
+    icon,
     Title,
     ModalOverlay,
     Modal,

@@ -3,6 +3,20 @@ import { BtnDefault } from '../../../components/button/styled';
 import { ITransferService } from '../../../services/wallet/transfer.service';
 import register from '../../../ultils/register';
 import S from './styled';
+import Joi from 'joi';
+import { InfoNotification } from '../../../ultils/notifications';
+import { ToastContainer } from 'react-toastify';
+
+const schema = Joi.object({
+    accountNumber: Joi.string().min(3).max(11).messages({
+        'string.min': 'O numero da conta muito curto',
+        'string.max': 'O numero da conta muito longo',
+    }),
+    accountDigit: Joi.string().min(3).max(11).messages({
+        'string.min': 'Digito da conta muito curto',
+        'string.max': 'Digito da conta muito longo',
+    }),
+});
 
 interface IProps {
     isOpen: boolean;
@@ -17,13 +31,21 @@ export function TransferModal(props: IProps) {
     const [accountDigit, setAccountDigit] = React.useState<number | null>(null);
 
     const transfer = async () => {
+        const { error } = schema.validate({
+            accountDigit: accountDigit?.toString(),
+            accountNumber: accountNumber?.toString(),
+        });
+        if (error) {
+            return InfoNotification({ message: error.details[0].message });
+        }
+
         const service = register.getInstance<ITransferService>('transfer-service');
         if (accountNumber && accountDigit && amount) {
             await service.perform({
                 amount,
                 receiver: { accountDigit, accountNumber },
             });
-            setTimeout(() => window.location.reload(), 100);
+            setTimeout(() => window.location.reload(), 200);
         }
     };
 
@@ -34,11 +56,13 @@ export function TransferModal(props: IProps) {
 
     return (
         <>
+            <ToastContainer />
             {props.isOpen == true ? (
                 <S.ModalOverlay>
                     <S.Modal>
                         {!viewAmount ? (
                             <>
+                                <S.icon />
                                 <S.Title>Nova Transferência</S.Title>
                                 <label>Digite o numero da conta</label>
                                 <S.Input
@@ -59,7 +83,8 @@ export function TransferModal(props: IProps) {
                             </>
                         ) : (
                             <>
-                                <label>Valor</label>
+                                <S.icon />
+                                <S.Title>Valor da Transferência</S.Title>
                                 <div>
                                     R$:
                                     <S.Input

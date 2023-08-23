@@ -46,7 +46,7 @@ export function BalanceView(data: IProps) {
                         })}
                     </h2>
                     <label>disponivel</label>
-                    <button onClick={() => getWalletDetails()}>button</button>
+                    <S.IconLoad onClick={() => getWalletDetails()} />
                 </>
             ) : (
                 <>

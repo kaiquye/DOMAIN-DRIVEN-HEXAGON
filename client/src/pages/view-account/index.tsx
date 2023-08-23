@@ -1,3 +1,5 @@
+let titleName = 'Conta';
+
 import S from './styled';
 import { Container, Skeleton } from '../../components/container.styles';
 import { SideBar } from '../../components/sidebar';
@@ -6,12 +8,16 @@ import React from 'react';
 import register from '../../ultils/register';
 import { IGetWalletDetails } from '../../services/wallet/get-wallet-details.service';
 import { IUser } from '../../structure/user.structure';
-import { TransferModal } from './model/transfer';
+import { TransferModal } from './modal/transfer';
 import { ToastContainer } from 'react-toastify';
 import { useParams } from 'react-router-dom';
 import { BalanceView } from '../../components/balance';
 
 export function DashboardPage() {
+    React.useEffect(() => {
+        document.title = titleName;
+    }, []);
+
     const [modalOpen, setModalOpen] = React.useState<boolean>(false);
     const [user, setUser] = React.useState<IUser | null>(null);
     const { userId } = useParams();

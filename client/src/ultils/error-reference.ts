@@ -1,5 +1,5 @@
 export type IErrorReference = "USER.UNABLE_TO_ACTIVATE_USER" | "USER.UNABLE_TO_ACTIVATE_USER" |
-    'USER.ALREADY_REGISTERED' | 'USER.NOT_FOUND' | 'WALLET.FAILED' | "WALLET.NOT.FOUND" | "USER.INVALID_EMAIL"
+    'USER.ALREADY_REGISTERED' | 'USER.NOT_FOUND' | 'WALLET.FAILED' | "WALLET.NOT.FOUND" | "USER.INVALID_EMAIL" | "resource.unauthorized"
 
 export enum ErrorReference {
     'USER.UNABLE_TO_ACTIVATE_USER' = "Não é possível ativar o usuário.",
@@ -9,5 +9,6 @@ export enum ErrorReference {
     'TRANSACTION.FAILED' = "Transação falhou.",
     'WALLET.NOT.FOUND' = "Carteira não encontrada.",
     'USER.INVALID_EMAIL' = "E-mail informado não é válido.",
-    "validation.error" = "Os dados informados não são válidos."
+    "validation.error" = "Os dados informados não são válidos.",
+    "resource.unauthorized" = "Acesso não autorizado."
 };

@@ -15,6 +15,16 @@ const Container = styled.div`
     }
 `;
 
+const IconLoad = styled.div`
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-size: 100%;
+    background-image: url('https://th.bing.com/th/id/R.3067b8b90d71528b071583c0bb59d5e2?rik=YtkA4cf3SSbBnw&pid=ImgRaw&r=0');
+    cursor: pointer;
+`;
+
 export default {
     Container,
+    IconLoad,
 };
