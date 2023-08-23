@@ -4,8 +4,8 @@
 ## Foi utilizado o EventEmitter para transmitir e receber comandos e eventos de domínio.
 Foi utilizado o **node-EventEmitter** para enviar e receber comandos e eventos no sistema. Cada vez que alguém faz uma solicitação de retirada de saldo (PIX), um evento é disparado para registrar a transação. Além disso, sempre que um novo usuário é criado, também  é disparado um evento."
 ##
-#
-![Animação](https://github.com/kaiquye/domain-driven-hexagon/assets/69175890/9121fd6e-4864-4ae7-8de1-db898ec04683)
+ ![Animação](https://github.com/kaiquye/DOMAIN-DRIVEN-HEXAGON/assets/69175890/e69fc13b-9c3b-4a4a-b160-9ab1208961b1)
+# 
 ##
 
 ### Os comandos/eventos (events) de solicitação são enviados para o controller http ou de eventos.
