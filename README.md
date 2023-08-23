@@ -21,4 +21,5 @@ Ele usa serviços de **domínio**, **entity** e **domain services** para process
 O serviço de aplicativo interage com a camada de infraestrutura por meio de interfaces específicas **PORTS** (Geralmente interfaces ou classes abstratas).
 
 ### A camada de infraestrutura trabalha com a persistência e interações externas.
- ![image](https://github.com/kaiquye/domain-driven-hexagon/assets/69175890/de7f13dd-c9a1-41bb-8e01-8e0da24dfc0e)
+![image](https://github.com/kaiquye/DOMAIN-DRIVEN-HEXAGON/assets/69175890/c1bf9365-0fc5-4159-9af9-f9f742cbcc3f)
+
