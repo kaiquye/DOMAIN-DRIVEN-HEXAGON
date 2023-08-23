@@ -4,7 +4,7 @@
 ![Animação](https://github.com/kaiquye/domain-driven-hexagon/assets/69175890/9121fd6e-4864-4ae7-8de1-db898ec04683)
 
 
-## Foi utlizado o **EventMitter** para enviar e receber comandos e eventos de dominio.
+## Foi utilizado o EventEmitter para transmitir e receber comandos e eventos de domínio.
 
 ### Os comandos/eventos (events) de solicitação são enviados para o controller http ou de eventos.
 
